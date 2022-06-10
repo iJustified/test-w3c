@@ -16,10 +16,6 @@ html {
   border-bottom: 4px solid #193f6e;
 }
 
-.header-wrap {
-  /* ! */
-}
-
 .header-nav {
   margin: 0 25px 0 25px;
   padding: 25px 0;
@@ -36,12 +32,7 @@ html {
   list-style: none;
 }
 
-.header-nav_item {
-/* ! */
-}
-
 .header-nav_item-link {
-  /* font-size: 18px; */
   font-size: clamp(16px, 2vw, 18px);
   font-weight: 500;
   text-decoration: none;
@@ -53,10 +44,6 @@ html {
   color: #193f6e;
   border-bottom: 2px solid #193f6e;
   transition: color 0.4s;
-}
-
-.main {
-/* ! */
 }
 
 .self {
@@ -90,10 +77,9 @@ html {
 
 .self-name_title {
   margin: 0 0 25px 0;
-  /* font-size: 48px; */
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 500;
-  color: #e1ebec;
+  color: #ffffff;
 }
 
 .self-name_title--bold {
@@ -102,10 +88,9 @@ html {
 
 .self-name_description {
   margin: 0;
-  /* font-size: 26px; */
   font-size: clamp(16px, 3vw, 26px);
   font-weight: 500;
-  color: #e1ebec;
+  color: #ffffff;
 
 }
 
@@ -137,7 +122,6 @@ html {
 .code-title {
   margin: 0 0 20px 0;
   padding: 0 0 5px 0;
-  /* font-size: 20px; */
   font-size: clamp(16px, 2vw, 20px);
   font-weight: 500;
   text-transform: uppercase;
@@ -326,10 +310,6 @@ html {
   padding: 0;
 }
 
-/* .code-example {
-  font-size: 16px;
-} */
-
 .footer {
   background-color: #72a5d3;
   border-top: 4px solid #193f6e;
@@ -416,12 +396,6 @@ html {
   .main-column_right {
     width: 100%;
   }
-
-  /* .about,
-  .experience,
-  .code {
-    margin: 25px 0 25px 45px;
-  } */
 
   .about-description,
   .experience-description {
