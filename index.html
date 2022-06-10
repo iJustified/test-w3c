@@ -4,13 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-
-    <h1>Hello</h1>
-
-    <img img/Fantasy-art-huang1372919379-7401413.jpeg>
-    
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-wrap">
+        <nav class="header-nav">
+          <ul class="header-nav_list">
+            <li class="header-nav_item">
+              <a href="#about" class="header-nav_item-link">About Me</a>
+            </li>
+            <li class="header-nav_item">
+              <a href="#contacts" class="header-nav_item-link">Contacts</a>
+            </li>
+            <li class="header-nav_item">
+              <a href="#skills" class="header-nav_item-link">Skills</a>
+            </li>
+            <li class="header-nav_item">
+              <a href="#code" class="header-nav_item-link">Code Example</a>
+            </li>
+            <li class="header-nav_item">
+              <a href="#exp" class="header-nav_item-link">Experience</a>
+            </li>
+            <li class="header-nav_item">
+              <a href="#education" class="header-nav_item-link">Education</a>
+            </li>
+            <li class="header-nav_item">
+              <a href="#lang" class="header-nav_item-link">Languages</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="self">
+        <div class="self-img">
+          <img src="img/content/avatar.jpg" alt="Ilya Tsygankov" width="150" height="150">
+        </div>
+        <div class="self-name">
+          <h1 class="self-name_title">Ilya <span class="self-name_title--bold">Tsygankov</span></h1>
+          <p class="self-name_description">Junior Frontend Developer</p>
+        </div>
+      </section>
+      <div class="main-column">
+        <div class="main-column_left">
+          <section class="contacts" id="contacts">
+            <h2 class="contacts-title">Contacts</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item contacts-item--phone">
+                <a href="tel:+79851649745" class="contacts-link">+7 985 164 9745</a>
+              </li>
+              <li class="contacts-item contacts-item--mail">
+                <a href="mailto:ijustified@yandex.ru" class="contacts-link">ijustified@yandex.ru</a>
+              </li>
+              <li class="contacts-item contacts-item--tg">
+                <a href="https://t.me/call_me_ilya" class="contacts-link">@call_me_ilya</a>
+              <li class="contacts-item contacts-item--discord">Justified#6078</li>
+              <li class="contacts-item contacts-item--git">
+                <a href="https://github.com/iJustified" class="contacts-link">github.com/iJustified</a>
+              </li>
+            </ul>         
+          </section>
+          <section class="skills" id="skills">
+            <h2 class="skills-title">Skills</h2>
+            <ul class="skills-list">
+              <li class="skills-item skills-item--html">HTML5</li>
+              <li class="skills-item skills-item--css">CSS3 (SCSS/SASS)</li>
+              <li class="skills-item skills-item--js">JavaScript basics</li>
+              <li class="skills-item skills-item--figma">Figma, Adobe Photoshop</li>
+              <li class="skills-item skills-item--gulp">Gulp, GitHub, VS Code</li>
+            </ul>
+          </section>
+          <section class="education" id="education">
+            <h2 class="education-title">Education</h2>
+            <p class="education-subtitle">HTML academy</p>
+            <ul class="education-list">
+              <li class="education-item">
+                <a href="https://htmlacademy.ru/courses" class="education-link">HTML, CSS, JS(basics)</a>
+              </li>
+            </ul>
+            <p class="education-subtitle">RS Schools</p>
+            <ul class="education-list">
+              <li class="education-item">
+                <a href="https://app.rs.school" class="education-link">Course «JavaScript/Front-end. Stage 0» (in progress)</a>
+              </li>
+            </ul>
+          </section>
+          <section class="languages" id="lang">
+            <h2 class="languages-title">Languages</h2>
+            <p class="languages-subtitle">English - Pre-intermediate/Intermediate</p>
+            <p class="languages-subtitle">Russian - Native speaker</p>
+          </section>
+        </div>
+        <div class="main-column_right">
+          <section class="about" id="about">
+            <h2 class="about-title">
+              About Me:
+            </h2>
+            <p class="about-description">
+              I work as a junior frontend developer in a big company. My main job is related to html and css.
+              My goal is to become a full-stack developer in the near future.
+              I am currently actively studying JS.
+              I also have excellent communication skills and I am really good at teamwork.
+            </p>
+          </section>
+          <section class="experience" id="exp">
+            <h2 class="experience-title">
+              Experience
+            </h2>
+            <p class="experience-description">
+              Junior frontend developer <br>
+              01/2022 - current day
+            </p>
+            <ul class="experience-list">
+              <li class="experience-item">Flex</li>
+              <li class="experience-item">Grid</li>
+              <li class="experience-item">Adaptive and responsive web technology</li>
+              <li class="experience-item">JS slider</li>
+            </ul>
+            <p class="experience-case">
+              <a href="https://ijustified.github.io/Botanika/" class="experience-link">Test case - 'Site for flower shop'</a>
+            </p>
+            <p class="experience-case">
+              <a href="https://github.com/iJustified" class="experience-link">All cases</a>
+            </p>
+          </section>
+          <section class="code" id="code">
+            <h2 class="code-title">Code Example</h2>
+              <pre class="code-contaner">
+                <code class="code-example">
+function browsersync() {
+  browserSync.init({
+      server: {
+        baseDir: 'app/'
+      }
+  });
+}
+                </code>
+                <code class="code-example">
+.accordance {
+  margin: -40px 0 0 0;
+  &-title {
+    font-size: 56px;
+    line-height: 0.96;
+  }
+  &-column {
+    &--bottom {
+      margin: 65px 18px 0 0;
+    }
+  }
+}
+                </code>                  
+              </pre>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrap">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="https://github.com/iJustified" class="footer-link">
+              <img src="img/icons/github.svg" alt="Логотип Github" width="40" height="40">
+            </a>
+          </li>
+          <li class="footer-item">2022</li>
+          <li class="footer-item">
+            <a href="https://rs.school/js/" class="footer-link">
+              <img src="img/icons/rs_school_js.svg" alt="Логотип RS School" width="40" height="15">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
