@@ -98,6 +98,7 @@ button {
 
 .header-nav_link:hover {
   color: #0D606F;
+  border-bottom: 2px solid #0D606F;
   transition: color 0.3s;
 }
 
