@@ -1,314 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/ico" href="img/icons/favicon.ico"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Travel Portal</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Plants</title>
 </head>
-<body class="body">
-
-  <header class="header">
-    <div class="header-wrap wrap-container">
-      <div class="header-logo">
-        <picture>
-          <source srcset="img/icons/header-logo_mv.svg" media="(max-width: 391px)">
-          <img src="img/icons/header-logo.svg" alt="Logo Travel Portal" width="216" height="31">
-        </picture>
-      </div>
-      <div class="header-nav_icon">
-        <img src="img/icons/header-nav_icon_mv.svg" alt="Menu icon" width="35" height="32">
-      </div>
-      <div class="header-nav-background"></div>
-      <nav class="header-nav">
-        <div class="header-nav_close">
-          <img src="img/icons/close_icon.svg" alt="Close menu icon" width="30" height="30">
+<body>
+    
+    <header class="header">
+        <div class="header_wrap wrapper">
+            <a href="/" class="header_logo">
+                <div class="header_logo-img">
+                    <img src="img/header_logo.svg" alt="Логотип Plants" width="20" height="20">
+                </div>
+                <p class="header_logo-title">Plants</p>
+            </a>
+            <nav class="header_nav">
+                <ul class="header_nav-list">
+                    <li class="header_nav-item">
+                        <a href="#home" class="header_nav-item--link">Home</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a href="#about" class="header_nav-item--link">About us</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a href="#service" class="header_nav-item--link">Service</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a href="#price" class="header_nav-item--link">Price</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a href="#contacts" class="header_nav-item--link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <ul class="header-nav_list">
-          <li class="header-nav_item">
-            <a class="header-nav_link" href="#steps">How It Works</a>
-          </li>
-          <li class="header-nav_item">
-            <a class="header-nav_link" href="#preview">Plan Your Trip</a>
-            </li>
-          <li class="header-nav_item">
-            <a class="header-nav_link" href="#destinations">Destinations</a>
-          </li>
-          <li class="header-nav_item">
-            <a class="header-nav_link" href="#stories">Travel Stories</a>
-          </li>
-          <li class="header-nav_item header-nav_item--mv">
-            <span class="header-nav_link" id="account">Account</span>
-          </li>
-          <li class="header-nav_item header-nav_item--mv">
-            <a class="header-nav_link" href="#social">Social Media</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-form">
-        <button class="header-btn btn-hover">Login</button>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- POPUP -->
-  <div class="popup popup-hidden">
-    <div class="login-popup login-popup-hidden">
-      <div class="popup-wrap">
-        <h6 class="popup-h6">Log in to your account</h6>
-        <button class="popup-btn popup-btn--blue">Sign In with Facebook</button>
-        <button class="popup-btn popup-btn--white">Sign In with Google</button>
-        <div class="popup-devide">
-          <span>or</span>
-        </div>     
-        <label for="input-email" class="label">Email</label>
-        <input type="text" id="input-email" class="popup-input">
-        <label for="input-password" class="label">Password</label>
-        <input type="text" id="input-password" class="popup-input popup-input--2nd">
-        <button class="popup-btn popup-btn--green">Sign In</button>
-        <span class="popup-link">Forgot Your Password?</span>
-        <div class="popup-line"></div>
-        <p class="popup-ques">Don’t have an account? <span class="popup-link popup-link--reg">Register</span></p>
-      </div>
-    </div>
-
-    <div class="reg-popup reg-popup-hidden">
-      <div class="reg-popup-wrap">
-        <h6 class="reg-popup-h6">Create account</h6>
-        <label for="reg-input-email" class="label">Email</label>
-        <input type="text" id="reg-input-email" class="reg-popup-input">
-        <label for="reg-input-password" class="label">Password</label>
-        <input type="text" id="reg-input-password" class="reg-popup-input popup-input--2nd">
-        <button class="reg-popup-btn popup-btn--green">Sign Up</button>
-        <div class="reg-popup-line"></div>
-        <p class="reg-popup-ques">Already have an account? <span class="reg-popup-link popup-link--inline">Log in</span></p>
-      </div>
-    </div>  
-  </div>
-<!-- END -->  
-
-  <main class="main">
-    <section class="preview">
-      <div class="preview-wrap wrap-container">
-        <div class="preview-txt-b" id="preview">
-          <h1 class="preview-title">Explore the beauty of <br> the World</h1>
-          <p class="preview-subtitle">Receive personalized recommendations for countries, hotels, activities and more</p>
-          <div class="preview-form">
-            <input class="preview-form_input" placeholder="What would you like to do?" type="text">
-            <button class="preview-form_btn btn-hover" type="submit">Start Planning</button>
-          </div>
+    <section class="welcome" id="home">
+        <div class="welcome_wrap wrapper">
+            <div class="welcome_img">
+                <img src="img/welcome_leafs.png" alt="Листки растения">
+            </div>
+            <div class="welcome_txt"> 
+                <h1 class="welcome_txt-title">
+                    We grow <span class="welcome_txt-title--green">plants</span> and give you oxygen
+                </h1>
+                <p class="welcome_txt-description">
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the 
+                    industry's standard dummy text ever since the 1500s.
+                </p>
+                <button class="welcome_txt-btn">
+                    LEARN MORE
+                </button>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="steps" id="steps">
-      <div class="steps-wrap wrap-container">
-        <h2 class="steps-title">3 STEPS TO THE PERFECT TRIP</h2>
-        <div class="steps-container">
-            <div class="steps-item steps-item--left">
-              <div class="steps-item_img">
-                <img src="img/content/step-1.png" alt="Icon bicycle" width="100" height="100">
-              </div>
-              <p class="steps-item_title">Tell us what you want to do</p>
+    <section class="about" id="about">
+        <div class="about_wrap wrapper">
+            <div class="about_txt">
+                <h2 class="about_title">
+                    We are <span class="about_title--orange">professional <br> experienced</span> gardeners
+                </h2>
+                <p class="about_description">
+                    Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry. Lorem Ipsum 
+                    has been the industry's standard dummy text 
+                    ever since the 1500s, when an unknown printer 
+                    took a galley of type and scrambled it to make 
+                    a type specimen book. It has survived not only 
+                    five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. 
+                </p>
             </div>
-            <div class="steps-item steps-item--2">
-              <div class="steps-item_img">
-                <img src="img/content/step-2.png" alt="Icon calendar" width="100" height="100">
-              </div>
-              <p class="steps-item_title">Share us preferable dates </p>
-            </div>
-            <div class="steps-item steps-item--right">
-              <div class="steps-item_img">
-                <img src="img/content/step-3.png" alt="Icon airplane" width="100" height="100">
-              </div>
-              <p class="steps-item_title">We will give you recommendations</p>
+            <div class="about_img">
+                <img src="img/about_plant.png" alt="Растение в горшке">
             </div>
         </div>
-      </div>
     </section>
 
-    <section class="destinations" id="destinations">
-      <div class="destinations-wrap">
-        <h2 class="destinations-title">POPULAR DESTINATIONS</h2>
-        <div class="destinations-container">
-
-          <!-- SLIDER DV -->
-          <div class="slider--dv">
-            <div class="slider-wrap--dv">
-              <div class="slider_btn--dv slider_btn--prev--dv"></div>
-              <div class="slider_btn--dv slider_btn--next--dv"></div>
-        
-              <div class="slider-container--dv">
-                <div class="slider-track--dv">
-                  <div class="slide--dv">
-                    <img src="img/content/spain_sldr_dv.jpg" alt="Spain">
-                    <p class="slide-title--dv">SPAIN</p>
-                  </div>
-                  <div class="slide--dv">
-                    <img src="img/content/japan_sldr_dv.jpg" alt="Japan">
-                    <p class="slide-title--dv">JAPAN</p>
-                  </div>
-                  <div class="slide--dv">
-                    <img src="img/content/usa_sldr_dv.jpg" alt="USA">
-                    <p class="slide-title--dv">USA</p>
-                  </div>
+    <section class="services" id="service">
+        <div class="services_wrap wrapper">
+            <div class="services_interface">
+                <h2 class="services_title">
+                    Service and our <br> projects
+                </h2>
+                <div class="services_btns-b">
+                    <button class="services_btn services_btn--garden">Gardens</button>
+                    <button class="services_btn services_btn--lawn">Lawn</button>
+                    <button class="services_btn services_btn--planting">Planting</button>
                 </div>
-              </div>
-        
-              <div class="slider-dots--dv">
-                <span class="slider-dot--dv"></span>
-                <span class="slider-dot--dv slide-active--dv"></span>
-                <span class="slider-dot--dv"></span>
-              </div>
             </div>
-          </div>        
-          <!-- END -->
+            <div class="services_cards">
+                <div class="services_item services_item--gardens">
+                    <div class="services_item-img">
+                        <img src="img/garden-care-1.png" alt="Растение">
+                    </div>
+                    <div class="services_item-txt">
+                        <h4 class="services_item-title">
+                            Garden care
+                        </h4>
+                        <p class="services_item-description">
+                            Lorem Ipsum has been the industry
+                        </p>
+                    </div>
+                </div>
 
-          <!-- SLIDER MV -->
-          <div class="slider">
-            <div class="slider-wrap">
-              <div class="slider_btn slider_btn--prev slider-btn--last">
-                <img src="img/icons/sldr-arrow-right.svg" alt="">
-              </div>
-              <div class="slider_btn slider_btn--next">
-                <img src="img/icons/sldr-arrow-right.svg" alt="">
-              </div>
-        
-              <div class="slider-container">
-                <div class="slide slide-active">
-                  <picture>
-                    <source srcset="img/content/spain_sldr_mv.jpg" media="(max-width: 480px)">
-                    <img src="img/content/spain_sldr_dv.jpg" alt="Spain">
-                  </picture>
-                  <p class="slide-title">SPAIN</p>
+                <div class="services_item services_item--planting">
+                    <div class="services_item-img">
+                        <img src="img/planting-1.png" alt="Растение">
+                    </div>
+                    <div class="services_item-txt">
+                        <h4 class="services_item-title">
+                            Planting
+                        </h4>
+                        <p class="services_item-description">
+                            Lorem Ipsum has been the industry
+                        </p>
+                    </div>
                 </div>
-                <div class="slide">
-                  <picture>
-                    <source srcset="img/content/japan_sldr_mv.jpg" media="(max-width: 480px)">
-                    <img src="img/content/japan_sldr_dv.jpg" alt="Japan">
-                  </picture>
-                  <p class="slide-title">JAPAN</p>
+
+                <div class="services_item services_item--lawn">
+                    <div class="services_item-img">
+                        <img src="img/lawn-care-1.png" alt="Растение">
+                    </div>
+                    <div class="services_item-txt">
+                        <h4 class="services_item-title">
+                            Lawn care
+                        </h4>
+                        <p class="services_item-description">
+                            Lorem Ipsum has been the industry
+                        </p>
+                    </div>
                 </div>
-                <div class="slide">
-                  <picture>
-                    <source srcset="img/content/usa_sldr_mv.jpg" media="(max-width: 480px)">
-                    <img src="img/content/usa_sldr_dv.jpg" alt="USA">
-                  </picture>
-                  <p class="slide-title">USA</p>
+
+                <div class="services_item services_item--planting">
+                    <div class="services_item-img">
+                        <img src="img/planting-2.png" alt="Растение">
+                    </div>
+                    <div class="services_item-txt">
+                        <h4 class="services_item-title">
+                            Planting
+                        </h4>
+                        <p class="services_item-description">
+                            Lorem Ipsum has been the industry
+                        </p>
+                    </div>
                 </div>
-              </div>
-        
-              <div class="slider-dots">
-                <span class="slider-dot slide-active"></span>
-                <span class="slider-dot"></span>
-                <span class="slider-dot"></span>
-              </div>
+
+                <div class="services_item services_item--gardens">
+                    <div class="services_item-img">
+                        <img src="img/garden-care-2.png" alt="Растение">
+                    </div>
+                    <div class="services_item-txt">
+                        <h4 class="services_item-title">
+                            Garden care
+                        </h4>
+                        <p class="services_item-description">
+                            Lorem Ipsum has been the industry
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services_item services_item--planting">
+                    <div class="services_item-img">
+                        <img src="img/planting-3.png" alt="Растение">
+                    </div>
+                    <div class="services_item-txt">
+                        <h4 class="services_item-title">
+                            Planting
+                        </h4>
+                        <p class="services_item-description">
+                            Lorem Ipsum has been the industry
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- END -->
-
-          <button class="destinations-btn btn-hover">Find More</button>
         </div>
-      </div>
     </section>
 
-    <section class="stories" id="stories">
-      <h2 class="stories-title">TRAVEL STORIES</h2>
-      <div class="stories-wrap">
-        <div class="stories-container wrap-container">
-          <div class="stories-container_items">
-            <div class="stories-item">
-              <div class="stories-item_img">
-                <picture>
-                  <source srcset="img/content/thailand_mv.jpg" media="(max-width: 391px)">
-                  <img src="img/content/thailand.jpg" alt="Thailand">
-                </picture>
-              </div>
-              <div class="stories-item_txt">
-                <h3 class="stories-item_title">10 Photos of Attractive Thailand</h3>
-                <p class="stories-item_description stories-item_description--dv" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <p class="stories-item_description stories-item_description--mv" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...</p>
-                <a class="stories-item_link" href="">Read More</a>
-              </div>
+    <section class="prices" id="price">
+        <div class="prices_wrap wrapper">
+            <div class="prices_left">
+                <h3 class="prices_subtitle">Prices</h3>
+                <div class="prices_list">
+                    <select name="" id="" class="prices_select">
+                        <option value="">Basics</option>
+                    </select>
+                    <select name="" id="" class="prices_select">
+                        <option value="">Standard</option>
+                    </select>
+                    <select name="" id="" class="prices_select">
+                        <option value="">Pro care</option>
+                    </select>
+                </div>
             </div>
-            <div class="stories-item">
-              <div class="stories-item_img">
-                <picture>
-                  <source srcset="img/content/utah_mv.jpg" media="(max-width: 391px)">
-                  <img src="img/content/utah.jpg" alt="Utah">
-                </picture>
-              </div>
-              <div class="stories-item_txt">
-                <h3 class="stories-item_title">Canyonlands National Park, Utah</h3>
-                <p class="stories-item_description stories-item_description--dv" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <p class="stories-item_description stories-item_description--mv" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...</p>
-                <a class="stories-item_link" href="">Read More</a>
-              </div>
+            <div class="prices_right">
+                <h2 class="prices_title">Our best <span class="prices_title--green">gardeners</span> are <br> ready to help you</h2>
+                <button class="prices_btn">Contact us</button>
+                <div class="prices_img">
+                    <img src="img/prices_leafs.png" alt="Листки растения">
+                </div>
             </div>
-            <div class="stories-item">
-              <div class="stories-item_img">
-                <picture>
-                  <source srcset="img/content/mountauns_mv.jpg" media="(max-width: 391px)">
-                  <img src="img/content/mountauns.jpg" alt="Mountauns">
-                </picture>
-              </div>
-              <div class="stories-item_txt">
-                <h3 class="stories-item_title">I left my heart in the Mountains!</h3>
-                <p class="stories-item_description stories-item_description--dv" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <p class="stories-item_description stories-item_description--mv" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...</p>
-                <a class="stories-item_link" href="">Read More</a>
-              </div>
-            </div>
-            <div class="stories-item">
-              <div class="stories-item_img">
-                <picture>
-                  <source srcset="img/content/journey_mv.jpg" media="(max-width: 391px)">
-                  <img src="img/content/journey.jpg" alt="Journey">
-                </picture>
-              </div>
-              <div class="stories-item_txt">
-                <h3 class="stories-item_title">The Longest journey in my life!</h3>
-                <p class="stories-item_description stories-item_description--dv" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <p class="stories-item_description stories-item_description--mv" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...</p>
-                <a class="stories-item_link" href="">Read More</a>
-              </div>
-            </div>
-          </div>
-          <button class="stories-btn btn-hover">See More</button>
         </div>
-      </div>
     </section>
-  </main>
-  
-  <footer class="footer" id="social">
-    <div class="footer-wrap wrap-container">
-      <p class="footer-title">All Rights Reserved © Travel Portal</p>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <a class="footer-link" href="https://github.com/iJustified">
-            <img src="img/icons/icon-insagram.svg" alt="Icon Instagram" width="34" height="34">
-          </a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link" href="https://rs.school/js-stage0/">
-            <img src="img/icons/icon-youtube.svg" alt="Icon YouTube" width="34" height="34">
-          </a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link" href="https://twitter.com/Justified_1989">
-            <img src="img/icons/icon-twitter.svg" alt="Icon Twitter" width="34" height="34">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
 
-<script src="js/index.js"></script>
+    <section class="contacts" id="contacts">
+        <div class="contacts_wrap wrapper">
+            <div class="contacts_img">
+                <img src="img/contacts_gardener.png" alt="Садовник">
+            </div>
+            <div class="contacts_content">
+                <h2 class="contacts_title">Contact us</h2>
+                <div class="contacts_list">
+                    <select name="" id="" class="contacts_select">
+                        <option value="">City</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_wrap wrapper">
+            <a href="https://github.com/iJustified" class="footer_git">
+                <p class="footer_git-txt">©</p>
+                <p class="footer_git-txt">2022</p>
+                <p class="footer_git-txt">github</p>
+            </a>
+            <a href="https://rs.school/js-stage0/" class="footer_school">Rolling Scopes School</a>
+            <ul class="footer_list">
+                <li class="footer_list-item">
+                    <a href="https://www.instagram.com/" class="footer_list-link footer_list-link--inst"></a>
+                </li>
+                <li class="footer_list-item">
+                    <a href="https://www.facebook.com/" class="footer_list-link footer_list-link--fb"></a>
+                </li>
+                <li class="footer_list-item">
+                    <a href="https://twitter.com/" class="footer_list-link footer_list-link--twit"></a>
+                </li>
+                <li class="footer_list-item">
+                    <a href="https://www.pinterest.com/" class="footer_list-link footer_list-link--pin"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
