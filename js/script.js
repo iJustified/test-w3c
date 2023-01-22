@@ -48,3 +48,39 @@ plantingBtn.addEventListener('click', function() {
         }
     };
 });
+
+// menu burger
+const navIcon = document.querySelector('.header_nav_icon');
+const navMenu = document.querySelector('.header_nav');
+const navClose = document.querySelector('.header_nav_close');
+const headerBack = document.querySelector('.header_nav-background');
+const link = document.querySelectorAll('.header_nav-item--link');
+
+
+navIcon.addEventListener('click', function(e) {
+  navIcon.classList.add('menu-active');
+  navMenu.classList.add('menu-active');
+  headerBack.classList.add('menu-active');
+});
+
+navClose.addEventListener('click', function(e) {
+  navIcon.classList.remove('menu-active');
+  navMenu.classList.remove('menu-active');
+  headerBack.classList.remove('menu-active');
+});
+
+headerBack.addEventListener('click', function(e) {
+  navIcon.classList.remove('menu-active');
+  navMenu.classList.remove('menu-active');
+  headerBack.classList.remove('menu-active');
+});
+
+let i = 0;
+while (i < link.length) {
+  link[i].addEventListener('click', function(e) {
+    navIcon.classList.remove('menu-active');
+    navMenu.classList.remove('menu-active');
+    headerBack.classList.remove('menu-active');
+  });
+  i++
+}
