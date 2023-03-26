@@ -4,290 +4,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <title>Plants</title>
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <title>Shelter - main</title>
 </head>
 <body>
-    
-    <!--   header   -->
-    <header class="header">
-        <div class="header_wrap wrapper">
-            <a href="/" class="header_logo">
-                <div class="header_logo-img">
-                    <img src="img/header_logo.svg" alt="Логотип Plants" width="20" height="20">
+
+    <div class="double-background">
+        <header class="header">
+            <div class="header_wrap wrapper">
+                <a href="" class="header_logo">
+                    <p class="header_logo-title">Cozy House</p>
+                    <p class="header_logo-subtitle">Shelter for pets in Boston</p>
+                </a>
+                <div class="header_nav_icon">
+                    <img src="img/header_nav_icon_mv.svg" alt="Menu icon" width="40" height="24">
+                  </div>
+                <div class="header_nav-background"></div>        
+                <nav class="header_nav">
+                    <div class="header_nav_close">
+                        <img src="img/close_icon.svg" alt="Close menu icon" width="30" height="30">
+                    </div>          
+                    <ul class="header_nav-list">
+                        <li class="header_nav-item">
+                            <a class="header_nav-item--link header_nav-item--active">About the shelter</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a href="../pet/pet-index.html" class="header_nav-item--link">Our pets</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a href="#help" class="header_nav-item--link">Help the shelter</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a href="#footer" class="header_nav-item--link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="notonly">
+            <div class="notonly_wrap wrapper">
+                <div class="notonly_left">
+                    <h1 class="notonly_title">Not only people <br> need a house</h1>
+                    <p class="notonly_description">
+                        We offer to give a chance to a little 
+                        and nice puppy with an extremely wide and open heart. 
+                        He or she will love you more than anybody else in the world, you will see!
+                    </p>
+                    <a href="#ourfriends" class="notonly_btn">Make a friend</a>
                 </div>
-                <p class="header_logo-title">Plants</p>
-            </a>
-            <div class="header_nav_icon">
-                <img src="img/header_nav_icon_mv.svg" alt="Menu icon" width="40" height="24">
-              </div>
-            <div class="header_nav-background"></div>        
-            <nav class="header_nav">
-                <div class="header_nav_close">
-                    <img src="img/close_icon.svg" alt="Close menu icon" width="30" height="30">
-                </div>          
-                <ul class="header_nav-list">
-                    <li class="header_nav-item">
-                        <a href="#home" class="header_nav-item--link">Home</a>
-                    </li>
-                    <li class="header_nav-item">
-                        <a href="#about" class="header_nav-item--link">About us</a>
-                    </li>
-                    <li class="header_nav-item">
-                        <a href="#service" class="header_nav-item--link">Service</a>
-                    </li>
-                    <li class="header_nav-item">
-                        <a href="#price" class="header_nav-item--link">Price</a>
-                    </li>
-                    <li class="header_nav-item">
-                        <a href="#contacts" class="header_nav-item--link">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                <div class="notonly_right">
+                    <picture>
+                        <source media="(max-width:639px)" srcset="../assets/img/notonly-dog_mv.png">
+                        <source media="(max-width:1023px)" srcset="../assets/img/notonly-dog_pv.png">
+                        <img src="../assets/img/notonly-dog_dv.png" alt="Dog" width="698" height="728">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <main class="main">
-        <section class="welcome" id="home">
-            <div class="welcome_wrap wrapper">
-                <div class="welcome_img">
-                    <img src="img/welcome_leafs.png" alt="Листки растения">
-                </div>
-                <div class="welcome_txt"> 
-                    <h1 class="welcome_txt-title">
-                        We grow <span class="welcome_txt-title--green">plants</span> and give you oxygen
-                    </h1>
-                    <p class="welcome_txt-description">
-                        Lorem Ipsum is simply dummy text of the printing and 
-                        typesetting industry. Lorem Ipsum has been the 
-                        industry's standard dummy text ever since the 1500s.
-                    </p>
-                    <button class="welcome_txt-btn">
-                        LEARN MORE
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="about" id="about">
+        <section class="about">
             <div class="about_wrap wrapper">
-                <div class="about_txt">
-                    <h2 class="about_title">
-                        We are <span class="about_title--orange">professional <br> experienced</span> gardeners
-                    </h2>
+                <div class="about_left">
+                    <img src="../assets/img/about-pets.png" alt="Cat & Dog" width="300" height="408">
+                </div>
+                <div class="about_right">
+                    <h2 class="about_title">About the shelter <br> “Cozy House”</h2>
                     <p class="about_description">
-                        Lorem Ipsum is simply dummy text of the 
-                        printing and typesetting industry. Lorem Ipsum 
-                        has been the industry's standard dummy text 
-                        ever since the 1500s, when an unknown printer 
-                        took a galley of type and scrambled it to make 
-                        a type specimen book. It has survived not only 
-                        five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged. 
+                        Currently we have 121 dogs and 342 cats on our hands and statistics 
+                        show that only 20% of them will find a family. The others 
+                        will continue to live with us and will be waiting for a lucky 
+                        chance to become dearly loved.
                     </p>
-                </div>
-                <div class="about_img">
-                    <img src="img/about_plant.png" alt="Растение в горшке">
-                </div>
+                    <p class="about_description">
+                        We feed our wards with the best food and make sure that they 
+                        do not get sick, feel comfortable (including psychologically) 
+                        and well. We are supported by 87 volunteers and 28 employees of 
+                        various skill levels. About 12% of the animals are taken by the 
+                        shelter staff. Taking care of the animals, they become attached to 
+                        the pets and would hardly ever leave them alone.
+                    </p>
+                </div> 
             </div>
         </section>
 
-        <section class="services" id="service">
-            <div class="services_wrap wrapper">
-                <div class="services_interface">
-                    <h2 class="services_title">
-                        Service and our <br> projects
-                    </h2>
-                    <div class="services_btns-b">
-                        <button class="services_btn services_btn--garden">Gardens</button>
-                        <button class="services_btn services_btn--lawn">Lawn</button>
-                        <button class="services_btn services_btn--planting">Planting</button>
+        <section class="ourfriends" id="ourfriends">
+            <div class="ourfriends_wrap wrapper">
+                <h2 class="ourfriends_title">Our friends who <br> are looking for a house</h2>
+                <div class="ourfriends_slider">
+                    <div class="ourfriends_slide">
+                        <div class="ourfriends_slide-img">
+                            <img src="../assets/img/slider-1.jpg" alt="Pet">
+                        </div>
+                        <p class="ourfriends_slide-title">Katrine</p>
+                        <a href="" class="ourfriends_slide-btn">Learn more</a>
+                    </div>
+                    <div class="ourfriends_slide">
+                        <div class="ourfriends_slide-img">
+                            <img src="../assets/img/slider-2.jpg" alt="Pet">
+                        </div>
+                        <p class="ourfriends_slide-title">Jennifer</p>
+                        <a href="" class="ourfriends_slide-btn">Learn more</a>
+                    </div>
+                    <div class="ourfriends_slide">
+                        <div class="ourfriends_slide-img">
+                            <img src="../assets/img/slider-3.jpg" alt="Pet">
+                        </div>
+                        <p class="ourfriends_slide-title">Woody</p>
+                        <a href="" class="ourfriends_slide-btn">Learn more</a>
+                    </div>
+
+                    <div class="ourfriends_slider-btns">
+                        <div class="ourfriends_slider-left"></div>
+                        <div class="ourfriends_slider-right"></div>
                     </div>
                 </div>
-                <div class="services_cards">
-                    <div class="services_item services_item--gardens">
-                        <div class="services_item-img">
-                            <picture>
-                                <source media="(max-width:639px)" srcset="img/garden-care-1_mv.png">
-                                <source media="(max-width:1023px)" srcset="img/garden-care-1_pv.png">
-                                <img src="img/garden-care-1.png" alt="Растение">
-                            </picture>
-                        </div>
-                        <div class="services_item-txt">
-                            <h4 class="services_item-title">
-                                Garden care
-                            </h4>
-                            <p class="services_item-description">
-                                Lorem Ipsum has been the industry
-                            </p>
-                        </div>
-                    </div>
+                <a href="../pet/pet-index.html" class="ourfriends_link">Get to know the rest</a>
+            </div>
+        </section>
 
-                    <div class="services_item services_item--planting">
-                        <div class="services_item-img">
-                            <picture>
-                                <source media="(max-width:639px)" srcset="img/planting-1_mv.png">
-                                <source media="(max-width:1023px)" srcset="img/planting-1_pv.png">
-                                <img src="img/planting-1.png" alt="Растение">
-                            </picture>
+        <section class="help" id="help">
+            <div class="help_wrap wrapper">
+                <h2 class="help_title">How you can help <br> our shelter</h2>
+                <div class="help_icon-box">
+                    <div class="help_icon-item">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/pet-food.svg" alt="Pet food" width="60" height="60">
                         </div>
-                        <div class="services_item-txt">
-                            <h4 class="services_item-title">
-                                Planting
-                            </h4>
-                            <p class="services_item-description">
-                                Lorem Ipsum has been the industry
-                            </p>
-                        </div>
+                        <p class="help_icon-title">Pet food</p>
                     </div>
-
-                    <div class="services_item services_item--lawn">
-                        <div class="services_item-img">
-                            <picture>
-                                <source media="(max-width:639px)" srcset="img/lawn-care-1_mv.png">
-                                <source media="(max-width:1023px)" srcset="img/lawn-care-1_pv.png">
-                                <img src="img/lawn-care-1.png" alt="Растение">
-                            </picture>
+                    <div class="help_icon-item">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/transportation.svg" alt="Transportation" width="60" height="60">
                         </div>
-                        <div class="services_item-txt">
-                            <h4 class="services_item-title">
-                                Lawn care
-                            </h4>
-                            <p class="services_item-description">
-                                Lorem Ipsum has been the industry
-                            </p>
-                        </div>
+                        <p class="help_icon-title">Transportation</p>
                     </div>
-
-                    <div class="services_item services_item--planting">
-                        <div class="services_item-img">
-                            <picture>
-                                <source media="(max-width:639px)" srcset="img/planting-2_mv.png">
-                                <source media="(max-width:1023px)" srcset="img/planting-2_pv.png">
-                                <img src="img/planting-2.png" alt="Растение">
-                            </picture>
+                    <div class="help_icon-item">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/toys.svg" alt="Toys" width="60" height="60">
                         </div>
-                        <div class="services_item-txt">
-                            <h4 class="services_item-title">
-                                Planting
-                            </h4>
-                            <p class="services_item-description">
-                                Lorem Ipsum has been the industry
-                            </p>
-                        </div>
+                        <p class="help_icon-title">Toys</p>
                     </div>
-
-                    <div class="services_item services_item--gardens">
-                        <div class="services_item-img">
-                            <picture>
-                                <source media="(max-width:639px)" srcset="img/garden-care-2_mv.png">
-                                <source media="(max-width:1023px)" srcset="img/garden-care-2_pv.png">
-                                <img src="img/garden-care-2.png" alt="Растение">
-                            </picture>
+                    <div class="help_icon-item">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/bowls.svg" alt="Bowls and cups" width="60" height="60">
                         </div>
-                        <div class="services_item-txt">
-                            <h4 class="services_item-title">
-                                Garden care
-                            </h4>
-                            <p class="services_item-description">
-                                Lorem Ipsum has been the industry
-                            </p>
-                        </div>
+                        <p class="help_icon-title">Bowls and cups</p>
                     </div>
-
-                    <div class="services_item services_item--planting">
-                        <div class="services_item-img">
-                            <picture>
-                                <source media="(max-width:639px)" srcset="img/planting-3_mv.png">
-                                <source media="(max-width:1023px)" srcset="img/planting-3_pv.png">
-                                <img src="img/planting-3.png" alt="Растение">
-                            </picture>
+                    <div class="help_icon-item">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/shampoo.svg" alt="Shampoos" width="60" height="60">
                         </div>
-                        <div class="services_item-txt">
-                            <h4 class="services_item-title">
-                                Planting
-                            </h4>
-                            <p class="services_item-description">
-                                Lorem Ipsum has been the industry
-                            </p>
+                        <p class="help_icon-title">Shampoos</p>
+                    </div>
+                    <div class="help_icon-item help_icon-item--top">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/vitamins.svg" alt="Vitamins" width="60" height="60">
                         </div>
+                        <p class="help_icon-title">Vitamins</p>
+                    </div>
+                    <div class="help_icon-item help_icon-item--top">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/medicines.svg" alt="Medicines" width="60" height="60">
+                        </div>
+                        <p class="help_icon-title">Medicines</p>
+                    </div>
+                    <div class="help_icon-item help_icon-item--top">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/collars.svg" alt="Collars / leashes" width="60" height="60">
+                        </div>
+                        <p class="help_icon-title">Collars / leashes</p>
+                    </div>
+                    <div class="help_icon-item help_icon-item--top">
+                        <div class="help_icon-img">
+                            <img src="../assets/img/sleeping.svg" alt="Sleeping areas" width="60" height="60">
+                        </div>
+                        <p class="help_icon-title">Sleeping areas</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="prices" id="price">
-            <div class="prices_wrap wrapper">
-                <div class="prices_left">
-                    <h3 class="prices_subtitle">Prices</h3>
-                    <div class="prices_list">
-                        <select class="prices_select">
-                            <option value="">Basics</option>
-                        </select>
-                        <select class="prices_select">
-                            <option value="">Standard</option>
-                        </select>
-                        <select class="prices_select">
-                            <option value="">Pro care</option>
-                        </select>
-                    </div>
+        <section class="inaddition">
+            <div class="inaddition_wrap wrapper">
+                <div class="inaddition_left">
+                    <img src="../assets/img/inaddition-img.png" alt="Dog" width="505" height="261">
                 </div>
-                <div class="prices_right">
-                    <h2 class="prices_title">Our best <span class="prices_title--green">gardeners</span> are <br> ready to help you</h2>
-                    <button class="prices_btn">Contact us</button>
-                    <div class="prices_img">
-                        <img src="img/prices_leafs.png" alt="Листки растения">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contacts" id="contacts">
-            <div class="contacts_wrap wrapper">
-                <div class="contacts_img">
-                    <img src="img/contacts_gardener.png" alt="Садовник">
-                </div>
-                <div class="contacts_content">
-                    <h2 class="contacts_title">Contact us</h2>
-                    <div class="contacts_list">
-                        <select class="contacts_select">
-                            <option value="">City</option>
-                        </select>
-                    </div>
+                <div class="inaddition_right">
+                    <h2 class="inaddition_title">You can also <br> make a donation</h2>
+                    <p class="inaddition_description">Name of the bank / Type of bank account</p>
+                    <a href="" class="inaddition_card">
+                        <div class="inaddition_card-icon">
+                            <img src="../assets/img/inaddition-card.svg" alt="Card icon" width="30" height="23">
+                        </div>
+                        <p class="inaddition_card-txt">8380 2880 8028 8791 7435</p>
+                    </a>
+                    <p class="inaddition_legal">
+                        Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices 
+                        maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis 
+                        in faucibus.
+                    </p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer_wrap wrapper">
-            <a href="https://github.com/iJustified" class="footer_git">
-                <p class="footer_git-txt">©</p>
-                <p class="footer_git-txt">2022</p>
-                <p class="footer_git-txt">github</p>
-            </a>
-            <a href="https://rs.school/js-stage0/" class="footer_school">Rolling Scopes School</a>
-            <ul class="footer_list">
-                <li class="footer_list-item">
-                    <a href="https://www.instagram.com/" class="footer_list-link footer_list-link--inst"></a>
-                </li>
-                <li class="footer_list-item">
-                    <a href="https://www.facebook.com/" class="footer_list-link footer_list-link--fb"></a>
-                </li>
-                <li class="footer_list-item">
-                    <a href="https://twitter.com/" class="footer_list-link footer_list-link--twit"></a>
-                </li>
-                <li class="footer_list-item">
-                    <a href="https://www.pinterest.com/" class="footer_list-link footer_list-link--pin"></a>
-                </li>
-            </ul>
+    <footer class="footer" id="footer">
+        <div class="footer-wrap wrapper">
+            <div class="footer_left">
+                <h2 class="footer_title">For questions <br> and suggestions</h2>
+                <!-- <div class="footer_list"> -->
+                    <a href="mailto: email@shelter.com" class="footer_list-item">
+                        <div class="footer_list-img footer_list-img--left">
+                            <img src="../assets/img/footer-mail.svg" alt="Email icon" width="42" height="32">
+                        </div>
+                        <p class="footer_list-txt">email@shelter.com</p>    
+                    </a>
+                    <a href="tel: +136745677554" class="footer_list-item">
+                        <div class="footer_list-img footer_list-img--left">
+                            <img src="../assets/img/footer-phone.svg" alt="Phone icon" width="42" height="32">
+                        </div>
+                        <p class="footer_list-txt">+13 674 567 75 54</p>    
+                    </a>
+                <!-- </div> -->
+            </div>
+            <div class="footer_center">
+                <h2 class="footer_title">We are waiting <br> for your&nbsp;visit</h2>
+                <!-- <div class="footer_list"> -->
+                    <a href="https://goo.gl/maps/uZa7jB4uFMgD4Ytc8" target="_blank" class="footer_list-item">
+                        <div class="footer_list-img footer_list-img--right">
+                            <img src="../assets/img/footer-pin.svg" alt="Pin icon" width="22" height="32">
+                        </div>
+                        <p class="footer_list-txt">1 Central Street, Boston <br> (entrance from the store)</p>    
+                    </a>
+                    <a href="https://goo.gl/maps/2JY1mcGmb67d4Je2A" target="_blank" class="footer_list-item">
+                        <div class="footer_list-img footer_list-img--right">
+                            <img src="../assets/img/footer-pin.svg" alt="Pin icon" width="22" height="32">
+                        </div>
+                        <p class="footer_list-txt">18 South Park, London </p>    
+                    </a>
+                <!-- </div> -->
+            </div>
+            <div class="footer_right">
+                <img src="../assets/img/footer-puppy.png" alt="Puppy" width="300" height="310">
+            </div>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
+    
 </body>
 </html>
